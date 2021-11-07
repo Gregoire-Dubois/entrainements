@@ -1,0 +1,10 @@
+from bs4 import BeautifulSoup
+import requests
+
+import time
+
+
+url = 'http://example.python-scraping.com/'
+
+response = requests.get(url)
+html = BeautifulSoup(response.text, 'html.parser')
